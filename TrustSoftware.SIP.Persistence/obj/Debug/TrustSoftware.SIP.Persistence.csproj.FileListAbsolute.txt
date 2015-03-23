@@ -1,0 +1,30 @@
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Persistence.dll
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Persistence.pdb
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\FluentNHibernate.dll
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\Iesi.Collections.dll
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\NHibernate.dll
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Entities.dll
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Utility.dll
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Entities.pdb
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\FluentNHibernate.xml
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\Iesi.Collections.xml
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\NHibernate.xml
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Utility.pdb
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\obj\Debug\ResolveAssemblyReference.cache
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\obj\Debug\TrustSoftware.SIP.Persistence.dll
+E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Persistence\obj\Debug\TrustSoftware.SIP.Persistence.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Persistence.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Persistence.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\FluentNHibernate.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\Iesi.Collections.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\NHibernate.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Utility.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\FluentNHibernate.xml
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\Iesi.Collections.xml
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\NHibernate.xml
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\TrustSoftware.SIP.Utility.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\obj\Debug\TrustSoftware.SIP.Persistence.csprojResolveAssemblyReference.cache
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\obj\Debug\TrustSoftware.SIP.Persistence.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\obj\Debug\TrustSoftware.SIP.Persistence.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\SilvanoFontes.AL.Entities.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Persistence\bin\Debug\SilvanoFontes.AL.Entities.pdb

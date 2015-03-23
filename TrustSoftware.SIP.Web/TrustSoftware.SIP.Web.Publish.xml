@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\SIP" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="localhost/SIP" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Ext.Net.UX.dll" publishTime="09/21/2012 15:14:25" />
+    <file relUrl="bin/TrustSoftware.SIP.Persistence.pdb" publishTime="10/11/2012 18:08:20" />
+    <file relUrl="bin/TrustSoftware.SIP.Utility.dll" publishTime="10/11/2012 18:08:20" />
+    <file relUrl="bin/TrustSoftware.SIP.Business.dll" publishTime="10/11/2012 18:08:20" />
+    <file relUrl="Web.config" publishTime="10/27/2012 00:05:01" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="09/21/2012 15:14:25" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="10/05/2012 17:51:28" />
+    <file relUrl="bin/FluentNHibernate.xml" publishTime="10/05/2012 17:51:29" />
+    <file relUrl="bin/TrustSoftware.SIP.Entities.dll" publishTime="10/11/2012 18:08:20" />
+    <file relUrl="bin/TrustSoftware.SIP.Web.dll" publishTime="10/30/2012 17:31:11" />
+    <file relUrl="Controles/UCPessoa.ascx" publishTime="10/27/2012 02:49:44" />
+    <file relUrl="bin/Ext.Net.pdb" publishTime="09/21/2012 15:14:25" />
+    <file relUrl="bin/TrustSoftware.SIP.Web.pdb" publishTime="10/30/2012 17:31:10" />
+    <file relUrl="bin/Ext.Net.dll" publishTime="09/21/2012 15:14:26" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="09/21/2012 15:14:25" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="09/21/2012 15:14:26" />
+    <file relUrl="bin/TrustSoftware.SIP.Entities.pdb" publishTime="10/11/2012 18:08:20" />
+    <file relUrl="bin/Ext.Net.Utilities.dll" publishTime="09/21/2012 15:14:26" />
+    <file relUrl="bin/Iesi.Collections.xml" publishTime="10/05/2012 17:51:28" />
+    <file relUrl="bin/Ext.Net.Utilities.xml" publishTime="09/21/2012 15:14:25" />
+    <file relUrl="bin/TrustSoftware.SIP.Utility.pdb" publishTime="10/11/2012 18:08:20" />
+    <file relUrl="bin/TrustSoftware.SIP.Business.pdb" publishTime="10/11/2012 18:08:20" />
+    <file relUrl="bin/Ext.Net.xml" publishTime="09/21/2012 15:14:25" />
+    <file relUrl="bin/FluentNHibernate.dll" publishTime="10/05/2012 17:51:29" />
+    <file relUrl="bin/NHibernate.xml" publishTime="10/05/2012 17:51:29" />
+    <file relUrl="bin/NHibernate.dll" publishTime="10/05/2012 17:51:29" />
+    <file relUrl="Teste.aspx" publishTime="10/30/2012 17:31:03" />
+    <file relUrl="bin/TrustSoftware.SIP.Persistence.dll" publishTime="10/11/2012 18:08:20" />
+  </publishProfile>
+</publishData>

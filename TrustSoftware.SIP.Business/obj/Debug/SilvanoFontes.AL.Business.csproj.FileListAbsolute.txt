@@ -1,0 +1,17 @@
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Business.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Business.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Persistence.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Utility.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\FluentNHibernate.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\NHibernate.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\Iesi.Collections.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Persistence.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Utility.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\FluentNHibernate.xml
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\NHibernate.xml
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\Iesi.Collections.xml
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.csprojResolveAssemblyReference.cache
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Entities.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Entities.pdb

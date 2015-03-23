@@ -1,0 +1,7 @@
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Entities.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Entities.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Entities\bin\Debug\TrustSoftware.SIP.Utility.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Entities\bin\Debug\TrustSoftware.SIP.Utility.pdb
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Entities\obj\Debug\SilvanoFontes.AL.Entities.csprojResolveAssemblyReference.cache
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Entities\obj\Debug\SilvanoFontes.AL.Entities.dll
+E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Entities\obj\Debug\SilvanoFontes.AL.Entities.pdb
