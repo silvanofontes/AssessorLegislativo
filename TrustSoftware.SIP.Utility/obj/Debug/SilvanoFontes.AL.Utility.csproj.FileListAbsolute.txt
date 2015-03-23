@@ -2,3 +2,8 @@ E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftwa
 E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Utility\bin\Debug\TrustSoftware.SIP.Utility.pdb
 E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.dll
 E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\bin\Debug\TrustSoftware.SIP.Utility.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\bin\Debug\TrustSoftware.SIP.Utility.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\obj\Debug\SilvanoFontes.AL.Utility.csprojResolveAssemblyReference.cache
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.pdb

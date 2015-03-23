@@ -15,3 +15,20 @@ E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftwa
 E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.pdb
 E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Entities.dll
 E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Entities.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.csprojResolveAssemblyReference.cache
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Business.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Business.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Entities.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Persistence.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Utility.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\FluentNHibernate.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\NHibernate.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\Iesi.Collections.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Entities.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Persistence.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\TrustSoftware.SIP.Utility.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\FluentNHibernate.xml
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\NHibernate.xml
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\Iesi.Collections.xml
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.pdb
