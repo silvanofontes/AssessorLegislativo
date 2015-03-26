@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SilvanoFontes.AL.Utility</RootNamespace>
-    <AssemblyName>TrustSoftware.SIP.Utility</AssemblyName>
+    <AssemblyName>SilvanoFontes.AL.Utility</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,9 @@
   <ItemGroup>
     <Compile Include="Enums.cs" />
     <Compile Include="Format.cs" />
+    <Compile Include="ICrud.cs" />
+    <Compile Include="IGenericCRUD.cs" />
+    <Compile Include="IGenericCRUD_old.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

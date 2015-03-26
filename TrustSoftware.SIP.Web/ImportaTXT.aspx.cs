@@ -15,56 +15,13 @@ namespace SilvanoFontes.AL.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string file = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\consulta_cand_2012_RJ.txt";
-            CandidaturaNeg negCandidatura = new CandidaturaNeg(file);
+            //string file = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\consulta_cand_2012_RJ.txt";
+            //CandidaturaNeg negCandidatura = new CandidaturaNeg(file);
+
+            EstadoNeg neg = new EstadoNeg();
+            Estado estado = neg.getByUF("RJ");
+            
             
         }
-
-        public void Importar(object sender, EventArgs e)
-        {
-            string mensagem = "";
-            int inicio = 17;
-            string arquivo = "C:\\Temp\\TXTAline.txt";
-            
-            ImportacaoTXT objTXT = new ImportacaoTXT();
-
-            GenericBusiness<ImportacaoTXT> neg = new GenericBusiness<ImportacaoTXT>();
-
-            using (StreamReader texto = new StreamReader(arquivo))
-            {
-                while ((mensagem = texto.ReadLine()) != null)
-                {
-                    if (mensagem.Substring(0, 4) == "NOME")
-                    {
-                        objTXT = new ImportacaoTXT();
-                        objTXT.Nome = mensagem.Substring(inicio, mensagem.Length - inicio);
-
-                        mensagem = texto.ReadLine();
-
-                        if (mensagem.Substring(0, 9) == "DATA NASC")
-                        {
-                            objTXT.DtNascimento = mensagem.Substring(inicio, mensagem.Length - inicio);
-                            
-                            mensagem = texto.ReadLine();
-
-                            if (mensagem.Substring(0, 6) == "ADMISS")
-                            {
-                                objTXT.DtEmissao = mensagem.Substring(inicio, mensagem.Length - inicio);
-                                mensagem = texto.ReadLine();
-
-                                if (mensagem.Substring(0, 3) == "CPF")
-                                {
-                                    objTXT.Cpf = mensagem.Substring(inicio, mensagem.Length - inicio);
-
-                                    neg.Save(objTXT);
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
-        }
-
-    }
+   }
 }

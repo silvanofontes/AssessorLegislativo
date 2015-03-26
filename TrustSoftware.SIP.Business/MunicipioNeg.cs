@@ -6,7 +6,7 @@ using SilvanoFontes.AL.Entities;
 
 namespace SilvanoFontes.AL.Business
 {
-    public class MunicipioNeg
+    public class MunicipioNeg : GenericBusiness<Municipio>
     {
         public MunicipioNeg()
         { }
@@ -18,8 +18,7 @@ namespace SilvanoFontes.AL.Business
         /// <returns>Class Municipio</returns>
         public Municipio getMunicipioById(int id)
         {
-            GenericBusiness<Municipio> objMunicipio = new GenericBusiness<Municipio>();
-            return objMunicipio.gerById(id);
+            return base.getById(id);
         }
 
         /// <summary>
@@ -28,8 +27,7 @@ namespace SilvanoFontes.AL.Business
         /// <returns>List Munic</returns>
         public List<Municipio> listAll()
         {
-            GenericBusiness<Municipio> objMunicipio = new GenericBusiness<Municipio>();
-            return objMunicipio.ListAll();
+            return base.ListAll();
         }
     }
 }

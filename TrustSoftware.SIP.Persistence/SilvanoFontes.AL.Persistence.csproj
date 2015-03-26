@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SilvanoFontes.AL.Persistence</RootNamespace>
-    <AssemblyName>TrustSoftware.SIP.Persistence</AssemblyName>
+    <AssemblyName>SilvanoFontes.AL.Persistence</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>C:\TrustGR\SolucaoGR\WEBGR\Bin\Elmah.dll</HintPath>
+    </Reference>
     <Reference Include="FluentNHibernate">
       <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
     </Reference>
@@ -52,7 +55,7 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="GenericCRUD.cs" />
-    <Compile Include="IGenericCRUD.cs" />
+    <Compile Include="GenericCRUD_old.cs" />
     <Compile Include="MapCandidatura\CandidatoMap.cs" />
     <Compile Include="MapCandidatura\CandidaturaMap.cs" />
     <Compile Include="MapCandidatura\CargoMap.cs" />
@@ -62,16 +65,9 @@
     <Compile Include="MapCandidatura\SituacaoCandidaturaMap.cs" />
     <Compile Include="Map\EstadoCivilMap.cs" />
     <Compile Include="MapCandidatura\NacionalidadeMap.cs" />
-    <Compile Include="Map\CaixaMap.cs" />
-    <Compile Include="Map\ContribuicaoMap.cs" />
-    <Compile Include="Map\DespesaMap.cs" />
     <Compile Include="Map\EstadoMap.cs" />
-    <Compile Include="Map\ImportacaoTXTMap.cs" />
     <Compile Include="Map\MunicipioMap.cs" />
     <Compile Include="Map\OcupacaoMap.cs" />
-    <Compile Include="Map\ParoquiaMap.cs" />
-    <Compile Include="Map\PastoralMap.cs" />
-    <Compile Include="Map\PessoaMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

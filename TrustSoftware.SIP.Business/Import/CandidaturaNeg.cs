@@ -33,8 +33,22 @@ namespace SilvanoFontes.AL.Business.Import
                     Candidatura Candidatura = new Candidatura();
                     Candidatura.Ano = int.Parse(rowArr[2]);
                     Candidatura.Turno = int.Parse(rowArr[3]);
-                    //Candidatura.UF = int.Parse(rowArr[2]);
+                    Candidatura.UF = new EstadoNeg().getByUF(rowArr[5]);
+
+
+                    Candidatura.Cargo =
+                        new CargoNeg().VerificaSalva(
+                            new Cargo()
+                            {
+                                Id = int.Parse(rowArr[8]),
+                                Descricao = rowArr[9]
+                            }
+                        );
+                                    
+                    
+
                 }
+                
             }
         }
     }

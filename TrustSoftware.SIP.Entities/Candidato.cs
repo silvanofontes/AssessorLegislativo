@@ -14,7 +14,7 @@ namespace SilvanoFontes.AL.Entities
         /// Número sequencial do candidato gerado internamente pelos
         /// sistemas eleitorais. Não é o número de campanha do candidato.
         /// </summary>
-        public virtual int IdCandidato { get; set; }
+        public virtual int IdSequencial { get; set; }
 
         /// <summary>
         /// CPF do candidato
@@ -34,7 +34,7 @@ namespace SilvanoFontes.AL.Entities
         /// <summary>
         /// Número do candidato na urna
         /// </summary>
-        public virtual int Numero { get; set; }
+        public virtual int NumeroCandidato { get; set; }
 
         /// <summary>
         /// Código da ocupação do candidato e
@@ -55,7 +55,7 @@ namespace SilvanoFontes.AL.Entities
         /// <summary>
         /// Idade do candidato na data da eleição
         /// </summary>
-        public virtual int IdadeEleicao { get; set; }
+        public virtual int Idade { get; set; }
         
         /// <summary>
         /// Sexo do candidato

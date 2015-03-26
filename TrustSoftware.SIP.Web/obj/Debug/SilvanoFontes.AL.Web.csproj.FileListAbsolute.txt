@@ -1,53 +1,20 @@
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Web.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Web.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Ext.Net.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Ext.Net.Utilities.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Ext.Net.UX.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Business.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Entities.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Utility.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Persistence.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\FluentNHibernate.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\NHibernate.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Iesi.Collections.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Business.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Entities.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Utility.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Ext.Net.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Ext.Net.xml
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Ext.Net.Utilities.xml
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Persistence.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.xml
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\FluentNHibernate.xml
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\NHibernate.xml
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\bin\Iesi.Collections.xml
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\obj\Debug\SilvanoFontes.AL.Web.csprojResolveAssemblyReference.cache
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\obj\Debug\TrustSoftware.SIP.Web.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Web\obj\Debug\TrustSoftware.SIP.Web.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\obj\Debug\SilvanoFontes.AL.Web.csprojResolveAssemblyReference.cache
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Web.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Web.pdb
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Business.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Entities.dll
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Utility.dll
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Persistence.dll
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Persistence.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\FluentNHibernate.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\NHibernate.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Elmah.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Iesi.Collections.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Business.pdb
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Entities.pdb
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Utility.pdb
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Ext.Net.pdb
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Ext.Net.xml
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Ext.Net.Utilities.xml
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\TrustSoftware.SIP.Persistence.pdb
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.pdb
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.xml
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\FluentNHibernate.xml
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\NHibernate.xml
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Iesi.Collections.xml
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\obj\Debug\SilvanoFontes.AL.Web.csprojResolveAssemblyReference.cache
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Persistence.pdb
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\obj\Debug\TrustSoftware.SIP.Web.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\obj\Debug\TrustSoftware.SIP.Web.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Utility.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL.Utility.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.xml

@@ -14,8 +14,8 @@ namespace SilvanoFontes.AL.Utility.Enums
 
     public enum Sexo
     {
-        Masculino = 1,
-        Feminino = 2
+        Masculino = 2,
+        Feminino = 4
     }
 
     public enum PerfilUsuario

@@ -10,7 +10,7 @@ namespace SilvanoFontes.AL.Persistence.MapCandidatura
         {
             Id(i => i.Id).GeneratedBy.Identity();
 
-            Map(i => i.IdCandidato);
+            Map(i => i.IdSequencial);
 
             Map(i => i.CPF);
 
@@ -18,7 +18,7 @@ namespace SilvanoFontes.AL.Persistence.MapCandidatura
 
             Map(i => i.NomeUrna);
 
-            Map(i => i.Numero);
+            Map(i => i.NumeroCandidato);
 
             References(i => i.Ocupacao)
                 .Not.LazyLoad()
@@ -26,7 +26,7 @@ namespace SilvanoFontes.AL.Persistence.MapCandidatura
 
             Map(i => i.NumeroTituloEleitor);
 
-            Map(i => i.IdadeEleicao);
+            Map(i => i.Idade);
 
             Map(i => i.Sexo).CustomType<Sexo>();
 

@@ -1,9 +1,0 @@
-E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Utility\bin\Debug\TrustSoftware.SIP.Utility.dll
-E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Utility\bin\Debug\TrustSoftware.SIP.Utility.pdb
-E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Utility\obj\Debug\ResolveAssemblyReference.cache
-E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.dll
-E:\Silvano\MaeDaDivinaProvidencia.com.br\TrustSoftware.SIP\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Utility\bin\Debug\TrustSoftware.SIP.Utility.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Utility\bin\Debug\TrustSoftware.SIP.Utility.pdb
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.dll
-E:\Silvano\Sites - Particulares\AssessorLegislativo\SilvanoFontes.AL\TrustSoftware.SIP.Utility\obj\Debug\TrustSoftware.SIP.Utility.pdb

@@ -42,6 +42,9 @@
       <HintPath>..\Ext.Net\ext.net.pro.1.3\Ext.Net.UX.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\TrustGR\Dll\ext.net.pro.1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -59,9 +62,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controles\UCPessoa.ascx" />
     <Content Include="ImportaTXT.aspx" />
-    <Content Include="Teste.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -73,13 +74,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controles\UCPessoa.ascx.cs">
-      <DependentUpon>UCPessoa.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controles\UCPessoa.ascx.designer.cs">
-      <DependentUpon>UCPessoa.ascx</DependentUpon>
-    </Compile>
     <Compile Include="ImportaTXT.aspx.cs">
       <DependentUpon>ImportaTXT.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,13 +82,6 @@
       <DependentUpon>ImportaTXT.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teste.aspx.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Teste.aspx.designer.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TrustSoftware.SIP.Business\SilvanoFontes.AL.Business.csproj">
@@ -107,11 +94,12 @@
     </ProjectReference>
     <ProjectReference Include="..\TrustSoftware.SIP.Utility\SilvanoFontes.AL.Utility.csproj">
       <Project>{80FA4E4B-D21F-4E1C-B42E-DDFCAB80534A}</Project>
-      <Name>TrustSoftware.SIP.Utility</Name>
+      <Name>SilvanoFontes.AL.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Diagrama\SIP.cd" />
+    <Folder Include="Controles\" />
+    <Folder Include="Diagrama\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

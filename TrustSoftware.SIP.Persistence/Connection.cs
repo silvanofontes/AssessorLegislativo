@@ -26,7 +26,7 @@ namespace SilvanoFontes.AL.Persistence
                     .MsSql2005
                     .ConnectionString(db.Replace("\\\\", "\\")))
                         //.ExposeConfiguration(cfg => { new SchemaUpdate(cfg).Execute(false, true); })//atualiza
-                        .ExposeConfiguration(cfg => { new SchemaExport(cfg).Create(false, true); })//criar
+                        //.ExposeConfiguration(cfg => { new SchemaExport(cfg).Create(false, true); })//criar
                         //.ExposeConfiguration(cfg => new SchemaExport(cfg).SetOutputFile(System.Web.HttpContext.Current.Server.MapPath("~/Log")+"\\scripts.sql").Create(true, false))//Exportar Schema
                     .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
                     .BuildSessionFactory();

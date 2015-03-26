@@ -41,23 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BensCandidato.cs" />
-    <Compile Include="Caixa.cs" />
     <Compile Include="Candidato.cs" />
     <Compile Include="Candidatura.cs" />
     <Compile Include="Cargo.cs" />
-    <Compile Include="Contrubuicao.cs" />
-    <Compile Include="Despesa.cs" />
     <Compile Include="Escolaridade.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="EstadoCivil.cs" />
-    <Compile Include="ImportacaoTXT.cs" />
     <Compile Include="Municipio.cs" />
     <Compile Include="Nacionalidade.cs" />
     <Compile Include="Ocupacao.cs" />
-    <Compile Include="Paroquia.cs" />
     <Compile Include="Partido.cs" />
-    <Compile Include="Pastoral.cs" />
-    <Compile Include="Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relatorios\DetalheVotoPorSecao.cs" />
     <Compile Include="Relatorios\FaixaEtaria.cs" />

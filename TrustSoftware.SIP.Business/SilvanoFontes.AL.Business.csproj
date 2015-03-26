@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CandidatoNeg.cs" />
+    <Compile Include="CargoNeg.cs" />
+    <Compile Include="EscolaridadeNeg.cs" />
+    <Compile Include="EstadoNeg.cs" />
     <Compile Include="GenericBusiness.cs" />
+    <Compile Include="GenericBusiness_old.cs" />
     <Compile Include="Import\CandidaturaNeg.cs" />
     <Compile Include="MunicipioNeg.cs" />
-    <Compile Include="PastoralNeg.cs" />
+    <Compile Include="OcupacaoNeg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +59,10 @@
     <ProjectReference Include="..\TrustSoftware.SIP.Persistence\SilvanoFontes.AL.Persistence.csproj">
       <Project>{C564C536-501C-4AA6-8C34-9A3464EA644C}</Project>
       <Name>SilvanoFontes.AL.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrustSoftware.SIP.Utility\SilvanoFontes.AL.Utility.csproj">
+      <Project>{80FA4E4B-D21F-4E1C-B42E-DDFCAB80534A}</Project>
+      <Name>SilvanoFontes.AL.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
