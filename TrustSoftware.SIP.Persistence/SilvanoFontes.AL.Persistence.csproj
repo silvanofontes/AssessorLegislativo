@@ -46,6 +46,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +57,7 @@
     <Compile Include="Connection.cs" />
     <Compile Include="GenericCRUD.cs" />
     <Compile Include="GenericCRUD_old.cs" />
+    <Compile Include="MapCandidatura\BensCandidatoMap.cs" />
     <Compile Include="MapCandidatura\CandidatoMap.cs" />
     <Compile Include="MapCandidatura\CandidaturaMap.cs" />
     <Compile Include="MapCandidatura\CargoMap.cs" />
@@ -63,11 +65,16 @@
     <Compile Include="MapCandidatura\PartidoMap.cs" />
     <Compile Include="MapCandidatura\ResultadoCampanhaMap.cs" />
     <Compile Include="MapCandidatura\SituacaoCandidaturaMap.cs" />
+    <Compile Include="MapCandidatura\TipoBemMap.cs" />
+    <Compile Include="Map\ArquivoMap.cs" />
     <Compile Include="Map\EstadoCivilMap.cs" />
     <Compile Include="MapCandidatura\NacionalidadeMap.cs" />
     <Compile Include="Map\EstadoMap.cs" />
     <Compile Include="Map\MunicipioMap.cs" />
     <Compile Include="Map\OcupacaoMap.cs" />
+    <Compile Include="Parametros\ArquivoMap.cs" />
+    <Compile Include="Parametros\LogImportacaoMap.cs" />
+    <Compile Include="Parametros\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

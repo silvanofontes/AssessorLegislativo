@@ -10,11 +10,54 @@
 <body>
     <form id="form1" runat="server">
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
-    <ext:Button ID="btn_Salvar" runat="server" Scale="Large" IconAlign="Right" Text="Importar"
-        ToolTip="Importar TXT" Icon="Disk">
+    <br />
+    <ext:Button ID="btnImportaArquivos" runat="server" Scale="Large" IconAlign="Right" Text="Carga tabela Arquivos"
+        ToolTip="Importar tabela arquivo" Icon="Reload">
         <DirectEvents>
-            <Click OnEvent="Importar">
-                <EventMask ShowMask="true" Msg="Importando..." MinDelay="500" Target="Page" />
+            <Click OnEvent="ImportaTabelaArquivos" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando arquivos..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    <br />
+    <ext:Button ID="btnImportaEstados" runat="server" Scale="Large" IconAlign="Right" Text="Carga Estados"
+        ToolTip="Importar estados" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportaEstados" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando estados..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    <br />
+
+    <ext:Button ID="btnImportarMunicipio" runat="server" Scale="Large" IconAlign="Right"
+        Text="Importar MUNICIPIOS" ToolTip="Importar TXT" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportaMunicipio" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando Municipio..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    <br />
+    <br />
+    <ext:Button ID="btnImportaCandidatura" runat="server" Scale="Large" IconAlign="Right"
+        Text="Importar CANDIDATURA" ToolTip="Importar TXT" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportaCandidatura" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando Candidaturas..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    <br />
+    <br />
+    <h1>
+        ATENÇÃO</h1>
+    <br />
+    <ext:Button ID="btnAtualizaBanco" runat="server" Scale="Large" IconAlign="Right"
+        Text="Atualizar Banco" ToolTip="Importar TXT" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="AtualizarBanco" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Atualizando..." MinDelay="500" Target="Page" />
             </Click>
         </DirectEvents>
     </ext:Button>

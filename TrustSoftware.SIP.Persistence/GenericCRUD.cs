@@ -6,6 +6,7 @@ using SilvanoFontes.AL.Utility;
 using NHibernate;
 using Elmah;
 using NHibernate.Criterion;
+using SilvanoFontes.AL.Utility.Enums;
 
 namespace SilvanoFontes.AL.Persistence
 {
@@ -21,6 +22,11 @@ namespace SilvanoFontes.AL.Persistence
         public ParametroInternal()
         {
             Type = Criteria.Eq;
+        }
+
+        public override string ToString()
+        {
+            return Text + " " + Type.ToString() +" " + Value;
         }
     }
 
@@ -180,15 +186,14 @@ namespace SilvanoFontes.AL.Persistence
 
         public bool DeleteByFilter()
         {
-            var queryString = string.Format("delete {0} where ", typeof(T));
+            var queryString = string.Format("delete {0} where ", typeof(T).Name);
+            
             try
             {
 
                 using (session)
                 {
                     transaction = session.BeginTransaction();
-
-                    ICriteria criteria = session.CreateCriteria(typeof(T));
 
                     bool ColocaAnd = false;
 
@@ -216,19 +221,19 @@ namespace SilvanoFontes.AL.Persistence
 
                             case Criteria.Ge:
 
-                                queryString += " " + item.Text + " > " + item.Text;
+                                queryString += " " + item.Text + " > :" + item.Text;
 
                                 break;
 
                             case Criteria.Le:
 
-                                queryString += " " + item.Text + " < " + item.Text;
+                                queryString += " " + item.Text + " < :" + item.Text;
 
                                 break;
                         }
                     }
 
-                    IQuery query = session.CreateQuery(queryString);
+                    ISQLQuery query = session.CreateSQLQuery(queryString);
 
                     //Preenche os parametros
                     foreach (ParametroInternal item in _criteria)
@@ -247,6 +252,15 @@ namespace SilvanoFontes.AL.Persistence
                 transaction.Rollback();
                 ErrorSignal.FromCurrentContext().Raise(ex);
                 throw;
+            }
+            finally
+            {
+                Clear();
+                if (session.IsOpen)
+                {
+                    session.Flush();
+                    session.Clear();
+                }
             }
             return true;
         }
@@ -279,6 +293,7 @@ namespace SilvanoFontes.AL.Persistence
                     session.Flush();
                     session.Clear();
                 }
+                Clear();
             }
         }
 
@@ -291,6 +306,9 @@ namespace SilvanoFontes.AL.Persistence
         {
             try
             {
+                if (!session.IsOpen)
+                    session = conexao.OpenSession();
+
                 using (session)
                 {
                     ICriteria criteria = session.CreateCriteria(typeof(T));
@@ -510,6 +528,16 @@ namespace SilvanoFontes.AL.Persistence
         {
             _criteria.Clear();
             _alias.Clear();
+        }
+
+        public void Refresh(T objeto)
+        {
+            session.Refresh(objeto);
+        }
+
+        public bool DBMaintenance(DBAction action)
+        {
+            return conexao.DBMaintenance(action);
         }
     }
 }

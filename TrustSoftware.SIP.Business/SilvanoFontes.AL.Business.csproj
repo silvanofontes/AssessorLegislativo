@@ -43,13 +43,23 @@
     <Compile Include="CandidatoNeg.cs" />
     <Compile Include="CargoNeg.cs" />
     <Compile Include="EscolaridadeNeg.cs" />
+    <Compile Include="EstadoCivilNeg.cs" />
     <Compile Include="EstadoNeg.cs" />
     <Compile Include="GenericBusiness.cs" />
     <Compile Include="GenericBusiness_old.cs" />
-    <Compile Include="Import\CandidaturaNeg.cs" />
+    <Compile Include="Import\ImportaBensCandidato.cs" />
+    <Compile Include="Import\ImportaCandidatura.cs" />
+    <Compile Include="Import\ImportaMunicipio.cs" />
     <Compile Include="MunicipioNeg.cs" />
+    <Compile Include="NacionalidadeNeg.cs" />
     <Compile Include="OcupacaoNeg.cs" />
+    <Compile Include="Parametros\ArquivoNeg.cs" />
+    <Compile Include="Parametros\LogImportacaoNeg.cs" />
+    <Compile Include="Parametros\UsuarioNeg.cs" />
+    <Compile Include="PartidoNeg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultadoCampanhaNeg.cs" />
+    <Compile Include="SituacaoCandidaturaNeg.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TrustSoftware.SIP.Entities\SilvanoFontes.AL.Entities.csproj">

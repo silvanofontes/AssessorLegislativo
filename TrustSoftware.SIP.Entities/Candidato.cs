@@ -14,7 +14,7 @@ namespace SilvanoFontes.AL.Entities
         /// Número sequencial do candidato gerado internamente pelos
         /// sistemas eleitorais. Não é o número de campanha do candidato.
         /// </summary>
-        public virtual int IdSequencial { get; set; }
+        public virtual Int64 IdSequencial { get; set; }
 
         /// <summary>
         /// CPF do candidato
@@ -37,7 +37,7 @@ namespace SilvanoFontes.AL.Entities
         public virtual int NumeroCandidato { get; set; }
 
         /// <summary>
-        /// Código da ocupação do candidato e
+        /// Código da ocupação do candidato e 
         /// Descrição da ocupação do candidato
         /// </summary>
         public virtual Ocupacao Ocupacao { get; set; }
@@ -85,9 +85,24 @@ namespace SilvanoFontes.AL.Entities
         /// <summary>
         /// Município do candidato
         /// </summary>
-        public virtual Municipio Municipio { get; set; }
+        public virtual Municipio Naturalidade { get; set; }
+
+        public virtual IList<BensCandidato> Bens { get; set; }
 
 
+        public Candidato()
+        {
+            Ocupacao = new Entities.Ocupacao();
+            Escolaridade = new Entities.Escolaridade();
+            EstadoCivil = new Entities.EstadoCivil();
+            Nacionalidade = new Entities.Nacionalidade();
+            Naturalidade = new Entities.Municipio();
+            Bens = new List<Entities.BensCandidato>();
+        }
 
+        public override string ToString()
+        {
+            return "Id: " + Id + " - Nome: " + NomeUrna + " - Número: " + NumeroCandidato + " - Id TSE: " + IdSequencial;
+        }
     }
 }

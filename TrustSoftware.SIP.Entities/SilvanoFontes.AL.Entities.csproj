@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parametros\Arquivo.cs" />
     <Compile Include="BensCandidato.cs" />
     <Compile Include="Candidato.cs" />
     <Compile Include="Candidatura.cs" />
@@ -47,9 +48,11 @@
     <Compile Include="Escolaridade.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="EstadoCivil.cs" />
+    <Compile Include="Parametros\LogImportacao.cs" />
     <Compile Include="Municipio.cs" />
     <Compile Include="Nacionalidade.cs" />
     <Compile Include="Ocupacao.cs" />
+    <Compile Include="Parametros\Usuario.cs" />
     <Compile Include="Partido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relatorios\DetalheVotoPorSecao.cs" />

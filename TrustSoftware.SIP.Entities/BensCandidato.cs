@@ -14,8 +14,6 @@ namespace SilvanoFontes.AL.Entities
         //HORA_GERACAO Hora de geração do arquivo (hora da extração) - Horário de Brasília
         //DESCRICAO_ELEICAO (*) Descrição da eleição
 
-
-
         /// <summary>
         /// ANO_ELEICAO Ano da eleição
         /// </summary>
@@ -24,15 +22,12 @@ namespace SilvanoFontes.AL.Entities
         /// <summary>
         /// SIGLA_UF (*) - Sigla da Unidade da Federação em que ocorreu a eleição
         /// </summary>
-        public virtual Estado UF { get; set; }
-
+        public virtual string UF { get; set; }
 
         /// <summary>
-        /// SQ_CANDIDATO (*) Número sequencial do candidato gerado internamente pelos sistemas 
-        /// eleitorais. Não é o número de campanha do candidato.
-        /// ATENÇÃO: Não vou quardar o sequencial do candidato, mas fazer referencia a entidade Candidato
+        /// Id do candidato, não é o IdSequencial
         /// </summary>
-        public virtual Candidato Candidato { get; set; }
+        public virtual int IdCandidato { get; set; }
 
         /// <summary>
         /// Tipo do bem do candidato
@@ -56,6 +51,7 @@ namespace SilvanoFontes.AL.Entities
         /// </summary>
         public virtual DateTime DataAtualizacao { get; set; }
 
-
+        public BensCandidato()
+        { }
     }
 }

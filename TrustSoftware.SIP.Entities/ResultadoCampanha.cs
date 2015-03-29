@@ -12,7 +12,7 @@ namespace SilvanoFontes.AL.Entities
         /// Código da situação de totalização do candidato naquele turno
         /// (não pode ser auto-incremento)
         /// </summary>
-        public virtual string Id { get; set; }
+        public virtual int Id { get; set; }
 
         /// <summary>
         /// DESC_SIT_TOT_TURNO 

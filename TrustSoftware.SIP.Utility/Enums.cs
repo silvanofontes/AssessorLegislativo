@@ -6,6 +6,13 @@ using System.Text;
 namespace SilvanoFontes.AL.Utility.Enums
 {
     #region "Geral"
+    public enum StatusLogin
+    {
+        Inativo = 0,
+        Ativo = 1,
+        Bloqueado = 3
+    }
+
     public enum SimNao
     {
         Sim = 1,
@@ -24,6 +31,13 @@ namespace SilvanoFontes.AL.Utility.Enums
         Usuario = 2,
         Cliente = 3,
         Parceiro = 4
+    }
+
+    public enum AnoLayout
+    {
+        Ate2008 = 1,
+        Apos2012 = 0,
+        Apos2014 = 3
     }
 
     /// <summary>
@@ -52,4 +66,11 @@ namespace SilvanoFontes.AL.Utility.Enums
     }
 
     #endregion
+
+    public enum DBAction
+    {
+        Create = 1,
+        Update = 2,
+        Export = 3
+    }
 }

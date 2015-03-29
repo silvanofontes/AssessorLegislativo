@@ -2,3 +2,4 @@ E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\bin\Debug\Silvan
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\bin\Debug\SilvanoFontes.AL.Utility.pdb
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\obj\Debug\SilvanoFontes.AL.Utility.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\obj\Debug\SilvanoFontes.AL.Utility.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Utility\obj\Debug\SilvanoFontes.AL.Utility.csprojResolveAssemblyReference.cache

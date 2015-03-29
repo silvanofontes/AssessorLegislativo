@@ -31,12 +31,48 @@ namespace SilvanoFontes.AL.Web {
         protected global::Ext.Net.ResourceManager ResourceManager1;
         
         /// <summary>
-        /// btn_Salvar control.
+        /// btnImportaArquivos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Button btn_Salvar;
+        protected global::Ext.Net.Button btnImportaArquivos;
+        
+        /// <summary>
+        /// btnImportaEstados control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnImportaEstados;
+        
+        /// <summary>
+        /// btnImportarMunicipio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnImportarMunicipio;
+        
+        /// <summary>
+        /// btnImportaCandidatura control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnImportaCandidatura;
+        
+        /// <summary>
+        /// btnAtualizaBanco control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnAtualizaBanco;
     }
 }

@@ -16,6 +16,7 @@ namespace SilvanoFontes.AL.Persistence.Map
             Map(i => i.Descricao);
 
             References(i => i.UF)
+                .ForeignKey("FK_MunicipioEstado")
                 .Column("Estado_Id")
                 .Not.LazyLoad()
                 .Cascade.None();

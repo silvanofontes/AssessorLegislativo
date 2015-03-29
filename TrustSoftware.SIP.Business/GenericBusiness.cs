@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using SilvanoFontes.AL.Persistence;
 using SilvanoFontes.AL.Utility;
+using SilvanoFontes.AL.Utility.Enums;
 
 
 namespace SilvanoFontes.AL.Business
@@ -22,7 +23,7 @@ namespace SilvanoFontes.AL.Business
             get { return objCRUD.strErro; }
         }
 
-        public bool Save(T obj)
+        public virtual bool Save(T obj)
         {
             return objCRUD.Save(obj);
         }
@@ -86,11 +87,12 @@ namespace SilvanoFontes.AL.Business
             objCRUD.AddAlias(parametro);
         }
 
-        public void Dispose()
+        public virtual void Dispose()
         {
             objCRUD.Dispose();
             objCRUD = null;
         }
+
         public void Clear()
         { objCRUD.Clear(); }
 
@@ -133,6 +135,17 @@ namespace SilvanoFontes.AL.Business
 
             throw new ArgumentException("No property reference expression was found.", "expression");
 
+        }
+
+        public void Refresh(T objeto)
+        {
+            objCRUD.Refresh(objeto);
+        }
+
+
+        public bool DBMaintenance(DBAction action)
+        {
+            return objCRUD.DBMaintenance(action);
         }
 
 
