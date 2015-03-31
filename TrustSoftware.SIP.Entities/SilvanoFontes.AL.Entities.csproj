@@ -56,12 +56,13 @@
     <Compile Include="Partido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relatorios\DetalheVotoPorSecao.cs" />
-    <Compile Include="Relatorios\FaixaEtaria.cs" />
-    <Compile Include="Relatorios\PerfilEleitorado.cs" />
+    <Compile Include="FaixaEtaria.cs" />
+    <Compile Include="Relatorios\PerfilDoEleitorado.cs" />
     <Compile Include="Relatorios\VotoCandiatoPorSecao.cs" />
     <Compile Include="ResultadoCampanha.cs" />
     <Compile Include="SituacaoCandidatura.cs" />
     <Compile Include="TipoBen.cs" />
+    <Compile Include="Zona.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TrustSoftware.SIP.Utility\SilvanoFontes.AL.Utility.csproj">

@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SilvanoFontes.AL.Entities;
-using SilvanoFontes.AL.Utility;
 using SilvanoFontes.AL.Entities.Parametros;
-using System.IO;
 using SilvanoFontes.AL.Business.Parametros;
+using System.IO;
 using SilvanoFontes.AL.Utility.Enums;
+using SilvanoFontes.AL.Utility;
+using SilvanoFontes.AL.Entities;
 
 namespace SilvanoFontes.AL.Business.Import
 {
-    public class ImportaBensCandidato : GenericBusiness<BensCandidato>
+    public class ImportaZona : ZonaNeg
     {
-
         private int _AnoArquivo { get; set; }
         private string _UFArquivo { get; set; }
         private int _IdUsuario { get; set; }
@@ -22,7 +21,7 @@ namespace SilvanoFontes.AL.Business.Import
         /// Construtor
         /// </summary>
         /// <param name="idUsuario">Id do usuario loga do no sistema</param>
-        public ImportaBensCandidato(int idUsuario)
+        public ImportaZona(int idUsuario)
         {
             _IdUsuario = idUsuario;
         }
@@ -45,65 +44,53 @@ namespace SilvanoFontes.AL.Business.Import
                 {
                     string[] rowArr = null;
                     Int32 TotalRegistros = 0;
-                    AnoLayout anoLayout;
-                    int flagAno;
 
                     LogImportacao logImportacao = new LogImportacao();
                     logImportacao.Arquivo = arquivo.Id;
                     logImportacao.Data = DateTime.Now;
                     logImportacao.Usuario = _IdUsuario;
 
-                    BensCandidato bem = new BensCandidato();
-                    
+                    Zona zona = new Zona();
+
                     while ((row = objArquivo.ReadLine()) != null)
                     {
                         row = row.Replace("\"", "");
 
                         rowArr = row.Split(';');
 
-                        if (int.Parse(rowArr[2]) >= 2012)
+                        if (rowArr[0].Trim() != "Nr Zona")
                         {
-                            flagAno = 0;
-                            anoLayout = AnoLayout.Apos2012;
+                            zona = new Zona();
+
+                            zona.NumeroZona = int.Parse(rowArr[0]);
+
+                            zona.CodigoProcessualResCNJ = rowArr[1].ToUpper().Trim();
+
+                            zona.Endereco = rowArr[2].ToUpper().Trim();
+
+                            zona.CEP = rowArr[3].Trim();
+
+                            zona.Bairro = rowArr[4].ToUpper().Trim();
+
+                            zona.NomeMunicipio = rowArr[5].ToUpper().Trim();
+
+                            Municipio municipio;
+
+                            zona.Municipio = ((municipio = new MunicipioNeg().getByNomeUF(zona.NomeMunicipio, rowArr[6].Trim())) == null) ? 0 : municipio.Id;
+
+                            Estado estado;
+                            zona.UF = ((estado = new EstadoNeg().getByUF(rowArr[6].Trim())) == null) ? 0 : estado.Id;
+
+                            try
+                            {
+                                base.Save(zona);
+                                TotalRegistros++;
+                            }
+                            catch (Exception ex)
+                            {
+                                logImportacao.AddErro(ex.Message);
+                            }
                         }
-                        else
-                        {
-                            flagAno = 1;
-                            anoLayout = AnoLayout.Ate2008;
-                        }
-
-                        bem = new BensCandidato();
-
-                        bem.Ano = int.Parse(rowArr[2]);
-
-                        bem.UF = rowArr[4];
-
-                        bem.IdCandidato = Int64.Parse(rowArr[5]);
-
-                        bem.TipoBem = new TipoBemNeg().VerificaSalva(
-                            new TipoBem()
-                                {
-                                    Id = int.Parse(rowArr[6]),
-                                    Descricao = rowArr[7]
-                                }
-                            );
-
-                        bem.Detalhe = rowArr[8].ToUpper().Trim();
-
-                        bem.Valor = double.Parse(rowArr[9].Trim().Replace(".",","));
-
-                        bem.DataAtualizacao = DateTime.Parse(rowArr[10] + " " + rowArr[11]);
-
-                        try
-                        {
-                            base.Save(bem);
-                            TotalRegistros++;
-                        }
-                        catch (Exception ex)
-                        {
-                            logImportacao.AddErro(ex.Message);
-                        }
-
                     }
 
                     logImportacao.CalculaTempo();
@@ -118,33 +105,27 @@ namespace SilvanoFontes.AL.Business.Import
 
                 }
             }
-
-            arquivo = null;
         }
 
         public void DeletaImportacaoAnterior()
         {
-            base.AddCriteria(x => x.Ano, Criteria.Eq, _AnoArquivo);
             base.AddCriteria(x => x.UF, Criteria.Eq, _UFArquivo);
-
             base.DeleteByFilter();
         }
 
         private void CarregaAnoUFArquivo(string arquivo)
         {
-            //CONSULTA_CAND_<ANO ELEIÇÃO>_<SIGLA UF>
-            int tamanhoTotal = "bem_candidato_2012_RJ.txt".Length;
-            string prefixo = "bem_candidato_";
-            int tamanhoAno = 4;
+            int tamanhoTotal = "zonas_RJ.txt".Length;
+            string prefixo = "zonas_";
             int tamanhoUF = 2;
 
             string nomeArquivo = arquivo.Substring(arquivo.Length - tamanhoTotal, tamanhoTotal);
 
+            _UFArquivo = nomeArquivo.Substring(prefixo.Length, tamanhoUF);
 
-            _AnoArquivo = int.Parse(nomeArquivo.Substring(prefixo.Length, tamanhoAno));
-            _UFArquivo = nomeArquivo.Substring(prefixo.Length + tamanhoAno + 1, tamanhoUF);
+            //Pego o código da UF
+            _UFArquivo = new EstadoNeg().getByUF(_UFArquivo).Id.ToString();
 
         }
-
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SilvanoFontes.AL.Entities
 {
-    public class TipoBen
+    public class TipoBem
     {
         /// <summary>
         /// CD_TIPO_BEM_CANDIDATO - Código do tipo do bem do candidato

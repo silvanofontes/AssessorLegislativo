@@ -22,8 +22,12 @@ namespace SilvanoFontes.AL.Business.Parametros
 
         public Arquivo VerificaSalva(Arquivo arquivo)
         {
-            if (base.getById(arquivo.Id) == null)
+            base.AddCriteria(x => x.Nome, Utility.Criteria.Eq, arquivo.Nome);
+            Arquivo arq = base.ByFilter();
+            if (arq == null)
                 base.Save(arquivo);
+            else
+                arquivo = arq;
 
             return arquivo;
         }

@@ -32,6 +32,15 @@ namespace SilvanoFontes.AL.Business
             return (estado);
         }
 
+        public Estado VerificaSalva(Estado estado)
+        {
+            if (getById(estado.Id) == null)
+                base.Save(estado);
+
+            return estado;
+
+        }
+
 
     }
 }

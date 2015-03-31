@@ -29,13 +29,13 @@ namespace SilvanoFontes.AL.Entities.Relatorios
         /// respectivamente, o Brasil, Exterior e Voto em Trânsito
         /// TODO: Atenção na importação, pois podem vir dados numéricos e caracteres.
         /// </summary>
-        public virtual Estado UE { get; set; }
+        public virtual int UE { get; set; }
 
         /// <summary>
         /// Município onde ocorreu a eleição (unificados os campos SIGLA_UF e NOME_MUNI..)
         /// ATENÇÃO: Utilizar o Código TSE
         /// </summary>
-        public virtual Municipio Municipio { get; set; }
+        public virtual int Municipio { get; set; }
 
         /// <summary>
         /// NUM_ZONA (*) Número da Zona Eleitoral
@@ -50,7 +50,7 @@ namespace SilvanoFontes.AL.Entities.Relatorios
         /// <summary>
         /// CODIGO_CARGO (*) - Código do cargo
         /// </summary>
-        public virtual Cargo Cargo { get; set; }
+        public virtual int Cargo { get; set; }
 
         //NUM_VOTAVEL (*) Número do votável – é o número do candidato (quando voto nominal) ou
         //do partido (quando voto em legenda). “Voto Branco” recebe código
@@ -63,9 +63,14 @@ namespace SilvanoFontes.AL.Entities.Relatorios
         public virtual int NumeroCandidato { get; set; }
 
         /// <summary>
-        /// Candidato
+        /// Id do Candidato, não é o IdSequencial
         /// </summary>
-        public virtual Candidato Candidato { get; set; }
+        public virtual int Candidato { get; set; }
+
+        /// <summary>
+        /// Número de votação do candidato. Não é o IdSequencial
+        /// </summary>
+        public virtual int NumeroCandidato { get; set; }
 
         /// <summary>
         /// QTDE_VOTOS - Quantidade de votos apurados na seção para o votável

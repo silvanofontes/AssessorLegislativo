@@ -27,12 +27,12 @@ namespace SilvanoFontes.AL.Entities
         /// <summary>
         /// Id do candidato, não é o IdSequencial
         /// </summary>
-        public virtual int IdCandidato { get; set; }
+        public virtual Int64 IdCandidato { get; set; }
 
         /// <summary>
         /// Tipo do bem do candidato
         /// </summary>
-        public virtual TipoBen TipoBem { get; set; }
+        public virtual TipoBem TipoBem { get; set; }
 
         /// <summary>
         /// DETALHE_BEM - Detalhe do bem do candidato

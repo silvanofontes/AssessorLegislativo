@@ -67,6 +67,33 @@ namespace SilvanoFontes.AL.Web {
         protected global::Ext.Net.Button btnImportaCandidatura;
         
         /// <summary>
+        /// btnImportaBensCandidato control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnImportaBensCandidato;
+        
+        /// <summary>
+        /// btnImportaPerfil control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnImportaPerfil;
+        
+        /// <summary>
+        /// btnZona control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnZona;
+        
+        /// <summary>
         /// btnAtualizaBanco control.
         /// </summary>
         /// <remarks>
@@ -74,5 +101,14 @@ namespace SilvanoFontes.AL.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Ext.Net.Button btnAtualizaBanco;
+        
+        /// <summary>
+        /// btnDownload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnDownload;
     }
 }

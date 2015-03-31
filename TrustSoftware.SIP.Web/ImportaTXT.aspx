@@ -11,8 +11,8 @@
     <form id="form1" runat="server">
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
     <br />
-    <ext:Button ID="btnImportaArquivos" runat="server" Scale="Large" IconAlign="Right" Text="Carga tabela Arquivos"
-        ToolTip="Importar tabela arquivo" Icon="Reload">
+    <ext:Button ID="btnImportaArquivos" runat="server" Scale="Large" IconAlign="Right"
+        Text="Carga tabela Arquivos" ToolTip="Importar tabela arquivo" Icon="Reload">
         <DirectEvents>
             <Click OnEvent="ImportaTabelaArquivos" Timeout="100000">
                 <EventMask ShowMask="true" Msg="Importando arquivos..." MinDelay="500" Target="Page" />
@@ -20,8 +20,8 @@
         </DirectEvents>
     </ext:Button>
     <br />
-    <ext:Button ID="btnImportaEstados" runat="server" Scale="Large" IconAlign="Right" Text="Carga Estados"
-        ToolTip="Importar estados" Icon="Reload">
+    <ext:Button ID="btnImportaEstados" runat="server" Scale="Large" IconAlign="Right"
+        Text="Carga Estados" ToolTip="Importar estados" Icon="Reload">
         <DirectEvents>
             <Click OnEvent="ImportaEstados" Timeout="100000">
                 <EventMask ShowMask="true" Msg="Importando estados..." MinDelay="500" Target="Page" />
@@ -29,7 +29,6 @@
         </DirectEvents>
     </ext:Button>
     <br />
-
     <ext:Button ID="btnImportarMunicipio" runat="server" Scale="Large" IconAlign="Right"
         Text="Importar MUNICIPIOS" ToolTip="Importar TXT" Icon="Reload">
         <DirectEvents>
@@ -49,6 +48,32 @@
         </DirectEvents>
     </ext:Button>
     <br />
+    <ext:Button ID="btnImportaBensCandidato" runat="server" Scale="Large" IconAlign="Right" Text="Importar Bens do Candidato"
+        ToolTip="Importar TXT" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportaBensCandidato" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando Declaração de bens..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    <br />
+    <ext:Button ID="btnImportaPerfil" runat="server" Scale="Large" IconAlign="Right" Text="Importar perfil do eleitorado"
+        ToolTip="Importar Perfil do Eleitorado" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportaPerfilDoEleitorado" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando Perfil do Eleitorado..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    <br />
+    <ext:Button ID="btnZona" runat="server" Scale="Large" IconAlign="Right" Text="Importar Zonas Eleitorais"
+        ToolTip="Importar Zonas Eleitorais" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportaZona" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando Perfil do Eleitorado..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
     <br />
     <h1>
         ATENÇÃO</h1>
@@ -61,6 +86,15 @@
             </Click>
         </DirectEvents>
     </ext:Button>
+    <ext:Button ID="btnDownload" runat="server" Scale="Large" IconAlign="Right"
+        Text="baixar arquivo" ToolTip="Importar TXT" Icon="DiskDownload">
+        <DirectEvents>
+            <Click OnEvent="BaixaArquivo" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Fzendo download..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    
     </form>
 </body>
 </html>
