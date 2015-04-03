@@ -13,3 +13,6 @@ E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\obj\Debug\Silva
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\obj\Debug\SilvanoFontes.AL.Business.pdb
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Utility.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\SilvanoFontes.AL.Utility.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\HtmlAgilityPack.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\HtmlAgilityPack.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Business\bin\Debug\HtmlAgilityPack.xml

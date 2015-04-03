@@ -18,3 +18,6 @@ E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\SilvanoFontes.AL
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.pdb
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\Newtonsoft.Json.xml
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\HtmlAgilityPack.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\HtmlAgilityPack.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Web\bin\HtmlAgilityPack.xml

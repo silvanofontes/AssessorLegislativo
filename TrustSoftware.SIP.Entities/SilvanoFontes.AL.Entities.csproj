@@ -60,6 +60,7 @@
     <Compile Include="Relatorios\PerfilDoEleitorado.cs" />
     <Compile Include="Relatorios\VotoCandiatoPorSecao.cs" />
     <Compile Include="ResultadoCampanha.cs" />
+    <Compile Include="Secao.cs" />
     <Compile Include="SituacaoCandidatura.cs" />
     <Compile Include="TipoBen.cs" />
     <Compile Include="Zona.cs" />

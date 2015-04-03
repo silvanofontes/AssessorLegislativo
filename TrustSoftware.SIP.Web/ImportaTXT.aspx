@@ -75,6 +75,36 @@
         </DirectEvents>
     </ext:Button>
     <br />
+    <ext:Button ID="btnImportacaoVotoCandiatoPorSecao" runat="server" Scale="Large" IconAlign="Right" Text="Votoacao Candiato Por Secao"
+        ToolTip="Importar Zonas Eleitorais" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportacaoVotoCandiatoPorSecao" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando Perfil do Eleitorado..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    
+    <br />
+    <ext:Button ID="btnImportaDetalheVotoPorSecao" runat="server" Scale="Large" IconAlign="Right" Text="Detalhe Votação por Seção"
+        ToolTip="Importar Detalhe por seção" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="ImportaDetalheVotoPorSecao" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando Detalhe por Seção..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    <br />
+    
+    <ext:Button ID="btnDownloadHTMLSecao" runat="server" Scale="Large" IconAlign="Right" Text="Importa HTML Secao"
+        ToolTip="Importa HTML Secao" Icon="Reload">
+        <DirectEvents>
+            <Click OnEvent="DownloadHTMLSecao" Timeout="100000">
+                <EventMask ShowMask="true" Msg="Importando HTML Seção..." MinDelay="500" Target="Page" />
+            </Click>
+        </DirectEvents>
+    </ext:Button>
+    
+    <br />
     <h1>
         ATENÇÃO</h1>
     <br />

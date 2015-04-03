@@ -80,20 +80,53 @@ namespace SilvanoFontes.AL.Web
             importa = null;
         }
 
+        public void ImportacaoVotoCandiatoPorSecao(object sender, DirectEventArgs e)
+        {
+            ImportacaoVotoCandiatoPorSecao importa = new ImportacaoVotoCandiatoPorSecao(0);
+            importa.Import(6);
+
+            importa.Dispose();
+            importa = null;
+        }
+
+        public void ImportaDetalheVotoPorSecao(object sender, DirectEventArgs e)
+        {
+            ImportaDetalheVotoPorSecao importa = new ImportaDetalheVotoPorSecao(0);
+            importa.Import(7);
+
+            importa.Dispose();
+            importa = null;
+        }
+        
+
         public void ImportaTabelaArquivos(object sender, DirectEventArgs e)
         {
             ArquivoNeg negArquivo = new ArquivoNeg();
 
-            negArquivo.VerificaSalva(new Arquivo() { Nome = "Municipios TSE", Descricao = "Lista de municípios com os códogos do TSE", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\lista_municipios_TSE.txt", Fonte = "http://www.tse.jus.br/arquivos/tse-lista-de-municipios-do-cadastro-da-justica-eleitoral/at_download/file" });
+            negArquivo.VerificaSalva(new Arquivo() { Nome = "Municipios TSE", Descricao = "Lista de municípios com os códogos do TSE", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\lista_municipios_justica_eleitoral.txt", Fonte = "http://www.tse.jus.br/arquivos/tse-lista-de-municipios-do-cadastro-da-justica-eleitoral/at_download/file" });
             negArquivo.VerificaSalva(new Arquivo() { Nome = "Consulta Candidatura", Descricao = "Candidatura dos candidatos", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\consulta_cand_2012_RJ.txt", Fonte = "http://agencia.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2012.zip" });
             negArquivo.VerificaSalva(new Arquivo() { Nome = "Bens do Candidato", Descricao = "Declaração de bens do candidato", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\bem_candidato_2012_RJ.txt", Fonte = "http://agencia.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2012.zip" });
             negArquivo.VerificaSalva(new Arquivo() { Nome = "Perfil do Eleitorado", Descricao = "Perfil do eleirorado", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\perfil_eleitorado_2012.txt", Fonte = "http://agencia.tse.jus.br/estatistica/sead/odsele/perfil_eleitorado/perfil_eleitorado_2012.zip" });
             negArquivo.VerificaSalva(new Arquivo() { Nome = "Zonas Eleitorais RJ", Descricao = "Zonas eleitorais do estado do Rio de Janeiro", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\zonas_RJ.txt", Fonte = "http://inter04.tse.jus.br/ords/dwtse/f?p=600:19:2472642731028246:FLOW_EXCEL_OUTPUT_R9269611968683063_pt-br" });
             negArquivo.VerificaSalva(new Arquivo() { Nome = "Voto Candidato por Secao", Descricao = "Votação do candidato por seção eleitoral", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\votacao_secao_2012_RJ.txt", Fonte = "http://agencia.tse.jus.br/estatistica/sead/eleicoes/eleicoes2012/votosecao/vsec_1t_RJ.zip" });
+            negArquivo.VerificaSalva(new Arquivo() { Nome = "Detalhe Voto por Secao", Descricao = "Detalhe da votação por seção eleitoral", NomeArquivo = "E:\\Silvano\\Sites - Particulares\\AssessorLegislativo\\Arquivos\\detalhe_votacao_secao_2012_RJ.txt", Fonte = "http://agencia.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2012.zip" });
+            
+            negArquivo.VerificaSalva(new Arquivo() { Nome = "HTML Endereco Secao RJ", Descricao = "HTML Endereco Secao RJ", NomeArquivo = @"E:\Silvano\Sites - Particulares\AssessorLegislativo\Arquivos\Download\lista_secao_municipio_RJ.html", Fonte = "http://www.tre-rj.jus.br/site/eleicoes/2012/local_votacao/lista_locais_votacao.jsp?keepThis=true&" });
+
+            ///TODO: Ainda não importado
+            negArquivo.VerificaSalva(new Arquivo() { Nome = "CSV Endereco Secao SP", Descricao = "CSV Endereco Secao SP", NomeArquivo = @"E:\Silvano\Sites - Particulares\AssessorLegislativo\Arquivos\Download\lista_secao_municipio_SP.csv", Fonte = "http://apps.tre-sp.jus.br/Proxy/proxy/eleitoradosp/ViewLocalVotacao/listarTodosPorZE.do" });
 
             negArquivo.Dispose();
             negArquivo = null;
 
+        }
+
+        public void DownloadHTMLSecao(object sender, DirectEventArgs e)
+        {
+            ImportaEnderecoSecaoRJ importa = new ImportaEnderecoSecaoRJ(0);
+
+            importa.DownloadListaSecoesHTML(8);
+            importa = null;
         }
 
         public void ImportaEstados(object sender, DirectEventArgs e)

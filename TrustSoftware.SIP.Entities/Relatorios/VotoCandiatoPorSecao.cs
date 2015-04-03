@@ -23,6 +23,16 @@ namespace SilvanoFontes.AL.Entities.Relatorios
         public virtual int Ano { get; set; }
 
         /// <summary>
+        /// Turno da eleição
+        /// </summary>
+        public virtual int Turno { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual int UF { get; set; }
+
+        /// <summary>
         /// SIGLA_UE (*) Sigla da Unidade Eleitoral (Em caso de eleição majoritária é a sigla da UF
         /// que o candidato concorre e em caso de eleição municipal é o código TSE 
         /// do município). Assume os valores especiais BR, ZZ e VT para designar,
@@ -60,22 +70,17 @@ namespace SilvanoFontes.AL.Entities.Relatorios
         /// NUM_VOTAVEL
         /// TODO: Verificar se vai usar o numero do candidato ou a entidade Candidato mesmo.
         /// </summary>
-        public virtual int NumeroCandidato { get; set; }
+        public virtual Int32 NumeroCandidato { get; set; }
 
         /// <summary>
         /// Id do Candidato, não é o IdSequencial
         /// </summary>
         public virtual int Candidato { get; set; }
-
-        /// <summary>
-        /// Número de votação do candidato. Não é o IdSequencial
-        /// </summary>
-        public virtual int NumeroCandidato { get; set; }
-
+    
         /// <summary>
         /// QTDE_VOTOS - Quantidade de votos apurados na seção para o votável
         /// </summary>
-        public virtual int QuantidadeVotos { get; set; }
+        public virtual Int32 QuantidadeVotos { get; set; }
 
     }
 }

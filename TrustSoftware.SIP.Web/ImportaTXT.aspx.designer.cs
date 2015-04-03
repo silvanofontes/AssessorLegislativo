@@ -94,6 +94,33 @@ namespace SilvanoFontes.AL.Web {
         protected global::Ext.Net.Button btnZona;
         
         /// <summary>
+        /// btnImportacaoVotoCandiatoPorSecao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnImportacaoVotoCandiatoPorSecao;
+        
+        /// <summary>
+        /// btnImportaDetalheVotoPorSecao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnImportaDetalheVotoPorSecao;
+        
+        /// <summary>
+        /// btnDownloadHTMLSecao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnDownloadHTMLSecao;
+        
+        /// <summary>
         /// btnAtualizaBanco control.
         /// </summary>
         /// <remarks>

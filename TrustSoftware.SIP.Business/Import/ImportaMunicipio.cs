@@ -12,18 +12,18 @@ namespace SilvanoFontes.AL.Business.Import
 {
     public class ImportaMunicipio : MunicipioNeg
     {
-        
+
         public ImportaMunicipio()
         { }
 
         public void Import(int idArquivo)
         {
-            
+
             Arquivo arquivo = new ArquivoNeg().getById(idArquivo);
 
             if (arquivo != null)
             {
-                
+
                 using (StreamReader objArquivo = new StreamReader(arquivo.NomeArquivo, Encoding.UTF7))
                 {
                     string[] rowArr = null;
@@ -35,30 +35,33 @@ namespace SilvanoFontes.AL.Business.Import
                     logImportacao.Arquivo = arquivo.Id;
                     logImportacao.Data = DateTime.Now;
                     logImportacao.Usuario = 0; ///TODO: Informar o Usuario Logado
-                    
+
                     while ((row = objArquivo.ReadLine()) != null)
                     {
                         rowArr = row.Split(';');
-                        municipio = new Municipio();
 
-                        municipio.Id = int.Parse(rowArr[0]);
-                        municipio.Descricao = rowArr[2].ToString().ToUpper().Trim();
-                        try
+                        if (rowArr[1].ToUpper().Trim() != "UF")
                         {
-                            municipio.UF = new EstadoNeg().getByUF(rowArr[1].ToString().ToUpper().Trim());
+                            municipio = new Municipio();
 
-                            base.VerificaSalva(municipio);
+                            municipio.Id = int.Parse(rowArr[0]);
+                            municipio.Descricao = rowArr[2].ToString().ToUpper().Trim();
+                            try
+                            {
+                                municipio.UF = new EstadoNeg().getByUF(rowArr[1].ToString().ToUpper().Trim());
 
-                            TotalRegistros++;
+                                base.VerificaSalva(municipio);
+
+                                TotalRegistros++;
+                            }
+                            catch (Exception ex)
+                            {
+                                logImportacao.AddErro(ex.Message);
+                            }
+
                         }
-                        catch (Exception ex)
-                        {
-                            logImportacao.AddErro(ex.Message);
-                        }
-
-                        
                     }
-                    
+
                     logImportacao.CalculaTempo();
                     logImportacao.TotalRegistros = TotalRegistros;
 

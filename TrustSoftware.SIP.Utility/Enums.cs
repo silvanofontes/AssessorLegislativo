@@ -29,7 +29,7 @@ namespace SilvanoFontes.AL.Utility.Enums
     {
         Administrador = 1,
         Usuario = 2,
-        Cliente = 3,
+        Eleitor = 3,
         Parceiro = 4
     }
 

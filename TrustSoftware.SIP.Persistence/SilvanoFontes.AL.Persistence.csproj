@@ -73,12 +73,15 @@
     <Compile Include="Map\FaixaEtariaMap.cs" />
     <Compile Include="Map\MunicipioMap.cs" />
     <Compile Include="Map\OcupacaoMap.cs" />
+    <Compile Include="Map\SecaoMap.cs" />
     <Compile Include="Map\ZonaMap.cs" />
     <Compile Include="Parametros\ArquivoMap.cs" />
     <Compile Include="Parametros\LogImportacaoMap.cs" />
     <Compile Include="Parametros\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorios\DetalheVotoPorSecaoMap.cs" />
     <Compile Include="Relatorios\PerfilDoEleitoradoMap.cs" />
+    <Compile Include="Relatorios\VotoCandiatoPorSecaoMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TrustSoftware.SIP.Entities\SilvanoFontes.AL.Entities.csproj">
