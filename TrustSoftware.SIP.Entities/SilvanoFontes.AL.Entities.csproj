@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Eleitor.cs" />
     <Compile Include="Parametros\Arquivo.cs" />
     <Compile Include="BensCandidato.cs" />
     <Compile Include="Candidato.cs" />
