@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SilvanoFontes.AL.Utility.Enums;
 
 namespace SilvanoFontes.AL.Entities
 {
     public class Eleitor
     {
         public virtual int Id { get; set; }
-        public virtual string IdFacebook { get; set; }
-        
+        public virtual int Empresa { get; set; }
+
         public virtual Int64 CPF { get; set; }
         public virtual string Nome { get; set; }
         public virtual string Email { get; set; }
@@ -34,10 +35,14 @@ namespace SilvanoFontes.AL.Entities
         public virtual int Zona { get; set; }
         public virtual int Secao { get; set; }
 
+        public virtual SimNao eEleitor { get; set; }
+
         /// <summary>
         /// TODO: Verificar se vai ser criado uma lista de indicações
         /// </summary>
         public virtual string Indicacao { get; set; }
+
+        public virtual SimNao LoginFacebook { get; set; }
 
 
     }

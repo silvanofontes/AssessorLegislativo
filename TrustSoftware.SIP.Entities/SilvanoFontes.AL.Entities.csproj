@@ -49,6 +49,7 @@
     <Compile Include="Escolaridade.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="EstadoCivil.cs" />
+    <Compile Include="Parametros\Empresa.cs" />
     <Compile Include="Parametros\LogImportacao.cs" />
     <Compile Include="Municipio.cs" />
     <Compile Include="Nacionalidade.cs" />

@@ -6,6 +6,7 @@
     <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
     <link href="plugins/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet"
         type="text/css" />
+    <link href="plugins/switch-button/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="content-header">
@@ -46,22 +47,28 @@
                                 </div>
                             </div>
                         </center>
+                        <div class="form-group">
+                            <label>
+                                Eleitor?</label>
+                            <!--input id="Checkbox1" type="checkbox"  checked data-on-text="Sim" data-off-text="Não" data-on-color="success" data-off-color="danger"-->
+                            <asp:CheckBox runat="server" ID="switchEleitor" Checked data-on-text="Sim" data-off-text="Não" data-on-color="success" data-off-color="danger" />
+                        </div>
                         <div class="row">
                             <div class="col-md-10">
                                 <label>
                                     Título</label>
-                                <input type="text" class="form-control" placeholder="Número do Título" data-toggle="tooltip"
-                                    title="" data-original-title="Será utilizado para acompanhar a data de vencimento." />
+                                <asp:TextBox runat="server" ID="txtTitulo" class="form-control" placeholder="Número do Título"
+                                    data-toggle="tooltip" title="" data-original-title="Será utilizado para acompanhar a data de vencimento."></asp:TextBox>
                             </div>
                             <div class="col-md-5">
                                 <label>
                                     Zona</label>
-                                <input type="text" class="form-control" placeholder="Zona" />
+                                <asp:TextBox ID="txtZona" runat="server" class="form-control" placeholder="Zona"></asp:TextBox>
                             </div>
                             <div class="col-md-5">
                                 <label>
                                     Seção</label>
-                                <input type="text" class="form-control" placeholder="Seção" />
+                                <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Seção"></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -73,9 +80,69 @@
                 <div class="box">
                     <div class="box-body">
                         <div class="form-group">
-                            <label>
-                                Nome</label>
-                            <input type="nome" class="form-control" placeholder="Informe o nome" />
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <label>
+                                        Nome</label>
+                                    <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Informe o nome"></asp:TextBox>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>
+                                        Date de nascimento:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-birthday-cake"></i>
+                                        </div>
+                                        <asp:TextBox ID="TextBox7" runat="server" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
+                                            data-mask></asp:TextBox>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <label>
+                                        Endereço e número</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-home"></i>
+                                        </div>
+                                        <asp:TextBox ID="TextBox3" runat="server" class="form-control" placeholder="Nome da rua/travessa/avenida, o número e o complemento (apto, casa)"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>
+                                        Bairro</label>
+                                    <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Bairro"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>
+                                        CEP</label>
+                                    <asp:TextBox ID="TextBox5" runat="server" class="form-control" placeholder="CEP"
+                                        data-inputmask='"mask": "99999-999"' data-mask></asp:TextBox>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>
+                                        Estado</label>
+                                    <asp:DropDownList ID="DropDownList1" runat="server" class="form-control" placeholder="UF">
+                                        <asp:ListItem Selected Text="RJ">RJ</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        Cidade</label>
+                                    <asp:DropDownList ID="DropDownList2" runat="server" class="form-control" placeholder="Cidade">
+                                        <asp:ListItem Selected Text="Niterói">Niterói</asp:ListItem>
+                                        <asp:ListItem Text="São Gonçalo">São Gonçalo</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>
@@ -84,59 +151,8 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-envelope-o"></i>
                                 </div>
-                                <input type="email" class="form-control" placeholder="seu@email.com.br" />
+                                <asp:TextBox ID="TextBox6" runat="server" class="form-control" placeholder="seu@email.com.br"></asp:TextBox>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label>
-                                Endereço e número</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-home"></i>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Informe o nome da rua e número." />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>
-                                CEP</label>
-                            <input type="text" class="form-control" placeholder="CEP" data-inputmask='"mask": "99999-999"'
-                                data-mask />
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <label>
-                                        Estado</label>
-                                    <select class="form-control" placeholder="UF">
-                                        <option selected>RJ</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-5">
-                                    <label>
-                                        Cidade</label>
-                                    <select class="form-control" placeholder="Cidade">
-                                        <option selected>Niterói</option>
-                                        <option>São Gonçalo</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>
-                                Date de nascimento:</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask />
-                            </div>
-                            <!-- /.input group -->
-                        </div>
-                        <div class="form-group">
-                            <label>
-                                Profissão</label>
-                            <input type="text" class="form-control" placeholder="Informe profissão." />
                         </div>
                         <div class="form-group">
                             <label>
@@ -147,33 +163,39 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-phone"></i>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Residencial" data-inputmask='"mask": "(999) 9999-9999"'
-                                            data-mask />
+                                        <asp:TextBox ID="TextBox9" runat="server" class="form-control" placeholder="Residencial"
+                                            data-inputmask='"mask": "(999) 9999-9999"' data-mask></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <div class="input-group-addon">
-                                            <i class="fa fa-mobile-phone"></i>
+                                            <i class="fa fa-mobile-phone fa-lg"></i>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Celular" data-inputmask='"mask": "(999) [9]9999-9999"'
-                                            data-mask />
+                                        <asp:TextBox ID="TextBox10" runat="server" class="form-control" placeholder="Celular"
+                                            data-inputmask='"mask": "(999) [9]9999-9999"' data-mask></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <i class="fa fa-whatsapp"></i>
+                                        <div class="input-group-addon bg-green">
+                                            <i class="fa fa-whatsapp fa-lg"></i>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="WhatsApp" data-inputmask='"mask": "(999) [9]9999-9999"'
-                                            data-mask data-toggle="tooltip" data-placement="top" data-original-title="Se for o mesmo celular, repita aqui." />
+                                        <asp:TextBox ID="TextBox11" runat="server" class="form-control" placeholder="WhatsApp"
+                                            data-inputmask='"mask": "(999) [9]9999-9999"' data-mask data-toggle="tooltip"
+                                            data-placement="top" data-original-title="Se for o mesmo celular, repita aqui."></asp:TextBox>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label>
+                                Profissão</label>
+                            <asp:TextBox ID="TextBox8" runat="server" class="form-control" placeholder="Informe profissão."></asp:TextBox>
+                        </div>
                         <!-- /.form group -->
                         <div class="form-group action">
-                            <input type="submit" class="btn btn-success" value="Salvar" />
+                            <asp:Button runat="server" ID="benSalvar" class="btn btn-primary" Text="Salvar" />
                         </div>
                     </div>
                     <!-- /.box-body -->
@@ -189,6 +211,10 @@
     <script src="plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
     <script src="plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
     <script src="plugins/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
+
+    <script src="plugins/switch-button/highlight.js" type="text/javascript"></script>
+    <script src="plugins/switch-button/main.js" type="text/javascript"></script>
+    <script src="plugins/switch-button/bootstrap-switch.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
             //Datemask dd/mm/yyyy
@@ -196,6 +222,7 @@
 
             $("[data-mask]").inputmask();
 
+            $("[name='switchEleitor']").bootstrapSwitch();
 
 
         });

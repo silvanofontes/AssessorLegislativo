@@ -30,7 +30,7 @@ namespace SilvanoFontes.AL.Utility.Enums
         Administrador = 1,
         Usuario = 2,
         Eleitor = 3,
-        Parceiro = 4
+        Parlamentar = 4
     }
 
     public enum AnoLayout
@@ -56,16 +56,12 @@ namespace SilvanoFontes.AL.Utility.Enums
 
     #endregion
 
-    #region "Eleições"
-
     public enum UnidadeEleitoral
     {
         BR = 1,
         ZZ = 2,
         VT = 3
     }
-
-    #endregion
 
     public enum DBAction
     {
