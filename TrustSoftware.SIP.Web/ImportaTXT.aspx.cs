@@ -20,6 +20,9 @@ namespace SilvanoFontes.AL.Web
     public class Retorno
     {
         //abc
+        /// <summary>
+        /// cde
+        /// </summary>
         public virtual int sEcho { get; set; }
         public virtual int iTotalRecords { get; set; }
         public virtual int iTotalDisplayRecords { get; set; }
