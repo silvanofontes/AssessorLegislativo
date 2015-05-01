@@ -9,7 +9,6 @@ using SilvanoFontes.AL.Entities.Parametros;
 using Newtonsoft.Json;
 using SilvanoFontes.AL.Utility;
 using SilvanoFontes.AL.Utility.Enums;
-using SilvanoFontes.AL.Utility;
 using SilvanoFontes.AL.Business;
 
 namespace SilvanoFontes.AL.Web.Controllers
