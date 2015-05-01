@@ -1,7 +1,7 @@
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Entities.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Entities.pdb
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Utility.dll
+E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Utility.pdb
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\obj\Debug\SilvanoFontes.AL.Entities.csprojResolveAssemblyReference.cache
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\obj\Debug\SilvanoFontes.AL.Entities.dll
 E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\obj\Debug\SilvanoFontes.AL.Entities.pdb
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Utility.dll
-E:\RepositorioGit\AssessorLegislativo\TrustSoftware.SIP.Entities\bin\Debug\SilvanoFontes.AL.Utility.pdb

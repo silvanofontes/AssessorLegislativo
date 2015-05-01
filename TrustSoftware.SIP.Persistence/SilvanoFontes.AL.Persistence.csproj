@@ -55,6 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="FNHModule.cs" />
+    <Compile Include="FNHSessionFactoryManager.cs" />
+    <Compile Include="FNHSessionManager.cs" />
     <Compile Include="GenericCRUD.cs" />
     <Compile Include="GenericCRUD_old.cs" />
     <Compile Include="MapCandidatura\BensCandidatoMap.cs" />
@@ -67,6 +70,7 @@
     <Compile Include="MapCandidatura\SituacaoCandidaturaMap.cs" />
     <Compile Include="MapCandidatura\TipoBemMap.cs" />
     <Compile Include="Map\ArquivoMap.cs" />
+    <Compile Include="Map\EleitorMap.cs" />
     <Compile Include="Map\EstadoCivilMap.cs" />
     <Compile Include="MapCandidatura\NacionalidadeMap.cs" />
     <Compile Include="Map\EstadoMap.cs" />
@@ -76,7 +80,9 @@
     <Compile Include="Map\SecaoMap.cs" />
     <Compile Include="Map\ZonaMap.cs" />
     <Compile Include="Parametros\ArquivoMap.cs" />
+    <Compile Include="Parametros\EmpresaMap.cs" />
     <Compile Include="Parametros\LogImportacaoMap.cs" />
+    <Compile Include="Parametros\UsuarioAcessoMap.cs" />
     <Compile Include="Parametros\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relatorios\DetalheVotoPorSecaoMap.cs" />

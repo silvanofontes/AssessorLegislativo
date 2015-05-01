@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using SilvanoFontes.AL.Entities;
+using SilvanoFontes.AL.Entities.Parametros;
 using SilvanoFontes.AL.Utility;
 using SilvanoFontes.AL.Utility.Enums;
 
@@ -8,8 +9,35 @@ namespace SilvanoFontes.AL.Business
 {
     public class CandidatoNeg : GenericBusiness<Candidato>
     {
-        public CandidatoNeg()
-        { }
+        public CandidatoNeg(Usuario usuario)
+        {
+            if (usuario != null)
+            {
+                switch (usuario.Perfil)
+                {
+                    case PerfilUsuario.Administrador:
+                        break;
+
+                    case PerfilUsuario.Parlamentar:
+                    case PerfilUsuario.Usuario:
+                    case PerfilUsuario.Eleitor:
+
+                        if (usuario.Empresa != null)
+                        {
+                            for (int i = 0; i < usuario.Empresa.Candidaturas.Count; i++)
+                            {
+                                base.AddCriteria(x => x.Id, Criteria.Eq, usuario.Empresa.Candidaturas[i].Id);
+                            }
+                        }
+                        else
+                        {
+                            ///throw new Exception("Usuário não possui empresa associada");
+                        }
+                        break;
+
+                }
+            }
+        }
 
         public Candidato getById(int id)
         {

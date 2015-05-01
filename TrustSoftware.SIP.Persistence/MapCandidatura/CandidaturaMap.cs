@@ -53,6 +53,11 @@ namespace SilvanoFontes.AL.Persistence.MapCandidatura
                 .Not.LazyLoad()
                 .Cascade.None();
 
+            HasManyToMany(x => x.Empresas)
+                .Cascade.None()
+                .Inverse()
+                .Table("EmpresaCandidaturas");
+            
         }
     }
 }

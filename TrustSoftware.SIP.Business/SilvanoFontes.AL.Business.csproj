@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CandidatoNeg.cs" />
+    <Compile Include="CandidaturaNeg.cs" />
     <Compile Include="CargoNeg.cs" />
     <Compile Include="DetalheVotoPorSecaoNeg.cs" />
     <Compile Include="EscolaridadeNeg.cs" />
@@ -60,11 +61,14 @@
     <Compile Include="Import\ImportaPerfilDoEleitorado.cs" />
     <Compile Include="Import\ImportaWEB.cs" />
     <Compile Include="Import\ImportaZona.cs" />
+    <Compile Include="JSonNeg.cs" />
     <Compile Include="MunicipioNeg.cs" />
     <Compile Include="NacionalidadeNeg.cs" />
     <Compile Include="OcupacaoNeg.cs" />
     <Compile Include="Parametros\ArquivoNeg.cs" />
+    <Compile Include="Parametros\EmpresaNeg.cs" />
     <Compile Include="Parametros\LogImportacaoNeg.cs" />
+    <Compile Include="Parametros\UsuarioAcessoNeg.cs" />
     <Compile Include="Parametros\UsuarioNeg.cs" />
     <Compile Include="PartidoNeg.cs" />
     <Compile Include="PerfilDoEleitoradoNeg.cs" />

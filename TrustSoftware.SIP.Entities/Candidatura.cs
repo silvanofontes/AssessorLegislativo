@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SilvanoFontes.AL.Entities.Parametros;
 
 namespace SilvanoFontes.AL.Entities
 {
@@ -92,7 +93,7 @@ namespace SilvanoFontes.AL.Entities
         /// Situação de totalização do candidato naquele turno
         /// </summary>
         public virtual ResultadoCampanha ResultadoCampanha { get; set; }
-        
 
+        public virtual IList<Empresa> Empresas { get; set; }
     }
 }

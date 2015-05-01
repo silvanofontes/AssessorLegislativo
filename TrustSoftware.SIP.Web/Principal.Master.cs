@@ -11,6 +11,9 @@ namespace SilvanoFontes.AL.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            Page.Header.DataBind();
+
             imgUser.ImageUrl = "image/silvano_fontes.jpg";
             lblUser.Text = "Silvano Fontes";
         }

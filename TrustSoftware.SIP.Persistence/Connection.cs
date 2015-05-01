@@ -47,7 +47,8 @@ namespace SilvanoFontes.AL.Persistence
         }
         public ISession OpenSession()
         {
-            return getConnection();
+            //return getConnection();
+            return FNHSessionManager.OpenSession();
         }
 
         public bool DBMaintenance(DBAction action)

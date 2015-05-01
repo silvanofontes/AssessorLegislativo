@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SilvanoFontes.AL.Utility.Enums;
+using SilvanoFontes.AL.Entities.Parametros;
 
 namespace SilvanoFontes.AL.Entities
 {
@@ -14,8 +15,10 @@ namespace SilvanoFontes.AL.Entities
         public virtual Int64 CPF { get; set; }
         public virtual string Nome { get; set; }
         public virtual string Email { get; set; }
-        public virtual string Endereco { get; set; }
 
+
+        public virtual string Endereco { get; set; }
+        public virtual string Bairro { get; set; }
         public virtual string CEP { get; set; }
 
         public virtual int UF { get; set; }
@@ -42,7 +45,9 @@ namespace SilvanoFontes.AL.Entities
         /// </summary>
         public virtual string Indicacao { get; set; }
 
-        public virtual SimNao LoginFacebook { get; set; }
+        public virtual Usuario Usuario { get; set; }
+
+
 
 
     }

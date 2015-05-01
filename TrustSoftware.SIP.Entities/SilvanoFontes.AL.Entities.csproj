@@ -55,6 +55,7 @@
     <Compile Include="Nacionalidade.cs" />
     <Compile Include="Ocupacao.cs" />
     <Compile Include="Parametros\Usuario.cs" />
+    <Compile Include="Parametros\UsuarioAcesso.cs" />
     <Compile Include="Partido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relatorios\DetalheVotoPorSecao.cs" />

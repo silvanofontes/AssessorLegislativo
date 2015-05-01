@@ -13,19 +13,52 @@ using System.Configuration;
 using SilvanoFontes.AL.Utility.Enums;
 using Ext.Net;
 using SilvanoFontes.AL.Business.Parametros;
+using System.Web.Script.Serialization;
 
 namespace SilvanoFontes.AL.Web
 {
+    public class Retorno
+    {
+        public virtual int sEcho { get; set; }
+        public virtual int iTotalRecords { get; set; }
+        public virtual int iTotalDisplayRecords { get; set; }
+        public virtual object[] aaData { get; set; }
+    }
+    public class PersonDetails
+    {
+        public int ID;
+        public string FirstName;
+        public string MiddleName;
+        public int Age;
+        public string Gender;
+    }
+
+
+
     public partial class ImportaTXTPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            Retorno ret = new Retorno();
+            List<PersonDetails> list = new List<PersonDetails>();
+            list.Add(new PersonDetails() { Age = 10, FirstName = "Silvano", Gender = "Lana", ID = 1, MiddleName = "Fontes" });
+            list.Add(new PersonDetails() { Age = 10, FirstName = "Bruno", Gender = "Lana", ID = 2, MiddleName = "Gabriel" });
+            list.Add(new PersonDetails() { Age = 10, FirstName = "João", Gender = "Lana", ID = 3, MiddleName = "Pedro" });
+            list.Add(new PersonDetails() { Age = 10, FirstName = "Lana", Gender = "Silvano", ID = 4, MiddleName = "Fontes" });
+
+            //ret.draw = 1;
+            //ret.recordsFiltered = 4;
+            //ret.recordsTotal = 4;
+            ret.aaData = list.ToArray();
+
+            string _JSON = new JavaScriptSerializer().Serialize(ret);
+
         }
 
         public void ImportaCandidatura(object sender, DirectEventArgs e)
         {
-            ImportaCandidatura impCandidatura = new ImportaCandidatura(0);
+            ImportaCandidatura impCandidatura = new ImportaCandidatura(new Usuario());
             impCandidatura.Import(2);
         }
 

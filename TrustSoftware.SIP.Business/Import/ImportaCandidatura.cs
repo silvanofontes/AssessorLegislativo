@@ -11,9 +11,9 @@ using SilvanoFontes.AL.Utility;
 
 namespace SilvanoFontes.AL.Business.Import
 {
-    public class ImportaCandidatura : GenericBusiness<Candidatura>
+    public class ImportaCandidatura : CandidaturaNeg
     {
-        private int _IdUsuario { get; set; }
+        private Usuario _Usuario { get; set; }
 
         private int _AnoArquivo { get; set; }
         private string _UFArquivo { get; set; }
@@ -22,9 +22,9 @@ namespace SilvanoFontes.AL.Business.Import
         /// Construtor
         /// </summary>
         /// <param name="idUsuario">Id do usuario loga do no sistema</param>
-        public ImportaCandidatura(int idUsuario)
+        public ImportaCandidatura(Usuario usuario) : base(usuario)
         {
-            _IdUsuario = idUsuario;
+            _Usuario = usuario;
         }
 
         public void Import(int idArquivo)
@@ -53,7 +53,7 @@ namespace SilvanoFontes.AL.Business.Import
                     LogImportacao logImportacao = new LogImportacao();
                     logImportacao.Arquivo = arquivo.Id;
                     logImportacao.Data = DateTime.Now;
-                    logImportacao.Usuario = _IdUsuario;
+                    logImportacao.Usuario = _Usuario.Id;
 
 
                     while ((row = objArquivo.ReadLine()) != null)
@@ -92,7 +92,7 @@ namespace SilvanoFontes.AL.Business.Import
                         // CANDIDATO
 
                         Candidato candidato = new Candidato();
-                        CandidatoNeg negCandidato = new CandidatoNeg();
+                        CandidatoNeg negCandidato = new CandidatoNeg(_Usuario);
 
 
 

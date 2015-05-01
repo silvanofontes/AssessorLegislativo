@@ -5,6 +5,15 @@ using System.Text;
 
 namespace SilvanoFontes.AL.Utility.Enums
 {
+    #region "WebAPI"
+    public enum ActionApi
+    {
+        Get,        //ById
+        GetAll,     //ListAll
+        Delete     //Delete
+    }
+    #endregion
+
     #region "Geral"
     public enum StatusLogin
     {
@@ -27,10 +36,18 @@ namespace SilvanoFontes.AL.Utility.Enums
 
     public enum PerfilUsuario
     {
-        Administrador = 1,
-        Usuario = 2,
-        Eleitor = 3,
-        Parlamentar = 4
+        Administrador = 1, ///Administradores do sistema (Desenvolvedores, suporte, mas não usuário)
+        Parlamentar = 2,
+        Usuario = 3,
+        Eleitor = 4
+
+    }
+
+    public enum TipoLogin
+    {
+        Outro = 0,
+        Sistema = 1,
+        FaceBook = 2
     }
 
     public enum AnoLayout
